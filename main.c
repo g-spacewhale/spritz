@@ -40,8 +40,9 @@ int main(int argc, char * argv[])
 	//check if stdin is empty, not working yet, get to work
 	while(TRUE)
 	{
+		fflush(buff);
 		fgets(buff,600,stdin);
-		if (buff[0]==EOF)
+		if (buff==EOF)
 			{	
 				printf("EOF");
 				return 0;
